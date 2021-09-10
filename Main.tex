@@ -1,0 +1,50 @@
+\documentclass[10pt]{ETSletter}
+% \documentclass[10pt,english]{ETSletter} % Puts the date, footer and header in English
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+
+% Uncomment this line if you don't want page numbering
+%\pagenumbering{gobble}
+
+% As per ETS guidelines, phone number and department are shown 
+% after the address, below the logo. Change it to something that 
+% makes sense to your
+\def\ETSphone{+1 514 396-8802}
+\def\ETSdepartment{Direction générale}
+\def\name{Aldus Bumbledore} % Your name here
+
+% Optional subject line
+\subject{L'insupportable métamorphose}
+
+% You can create your signature here
+\signature{\raggedright
+\includegraphics[scale=0.2]{figs/dumbledores_signature.png}\\
+\name
+}
+
+% If use want to have a bilingual version of any content, use the \bilingual command
+% Example: \bilingual{Headmaster of Hogwarts}{Directeur de Poudlard}
+\address{\textbf{\bilingual{Headmaster of Hogwarts}{Directeur de Poudlard}\\
+Président du Magenmagot\\
+Fondateur de l'ordre du Phénix}\\
+École de magie et de sorcellerie de Poudlard\\ 
+Highlands, Écosse, Royaume-Uni\\
+}
+
+\begin{document}
+
+\begin{letter}{
+    Professeure Minerva McGonagall\\ 
+    École de magie et de sorcellerie de Poudlard\\ 
+    Highlands, Écosse, Royaume-Uni\\ 
+}
+ 
+\opening{Chère Professeure McGonagall,}
+
+\lipsum[1-10]
+
+\closing{Bien cordialement,}
+
+\end{letter}
+
+\end{document}
