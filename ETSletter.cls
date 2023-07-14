@@ -82,7 +82,7 @@
     \def\ETSletter@substart{Objet :}
     \def\ETSletter@logo{Logo_ETS_FR}
     \newcommand{\ETSletter@city}{Montréal}
-    \newcommand{\ETSletter@datepref}{le}
+    \newcommand{\ETSletter@datepref}{le }
   \or
     \ifcase\pdfstrcmp{\ETSletter@language}{spanish}
       \typeout{ETS Letter in Spanish.}
@@ -202,7 +202,7 @@
 % We must include the subject in the opening.
 \renewcommand{\opening}[1]{\thispagestyle{plain}%
     \textbf{\ifx\ETSletter@city\empty Montreal \else \ETSletter@city \fi,} 
-    \textbf{{\ETSletter@datepref }\@date}\par
+    \textbf{{\ETSletter@datepref}\@date}\par
     \medskip
     {\raggedright \toname \\ \toaddress \par}%
     \ifx\toaddress\empty \else \medskip \fi    
