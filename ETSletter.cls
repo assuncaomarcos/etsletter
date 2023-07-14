@@ -225,11 +225,14 @@
     \ifETSletter@signature%
       \sigField[\BC{0.25 0.25 0.25}] {ETSSign}{2in}{4\baselineskip}\\ %
     \fi
-    \ifx\@empty\ETSletter@name \else \ETSletter@name \fi
     \ifx\@empty\fromsig
     \fromname
     \else \fromsig\raggedright 
     \fi\strut
+    \ifx\@empty\ETSletter@name \else % 
+    \parbox{1.\textwidth}{\raggedright %
+    \noindent \ETSletter@name}% 
+    \fi
     \par
     \ifx\@empty\fromaddress\else
     \fromaddress
