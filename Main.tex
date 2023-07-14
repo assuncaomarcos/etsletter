@@ -1,30 +1,37 @@
-\documentclass[10pt]{ETSletter}
-% \documentclass[10pt,english]{ETSletter} % Puts the date, footer and header in English
-\usepackage[T1]{fontenc}
+\documentclass[10pt,language=french,signature]{ETSletter}
+% \documentclass[10pt,language=french]{ETSletter}
+% \documentclass[11pt,language=english]{ETSletter} % Puts date, subject start and logo in English
+% \documentclass[11pt,language=spanish]{ETSletter  % Puts date, subject start and logo in Spanish
+
+% You can also use 11pt or 12pt font size 
+% If you provide the option signature, the class will create 
+% signature field that can be signed using Acrobat Reader
+
+% To create some random text
 \usepackage{lipsum}
 
 % Uncomment this line if you don't want page numbering
 %\pagenumbering{gobble}
 
-% As per ETS guidelines, phone number and department are shown 
-% after the address, below the logo. Change it to something that 
-% makes sense to your
-\def\ETSphone{+1 514 396-8802}
-\def\ETSdepartment{Direction générale}
-\def\name{Aldus Dumbledore} % Your name here
+% As per the new ETS guidelines, the phone number on the letters
+% should be the one below, but I kept the customization option just in case
+\ETSphone{514 396-8800}
+\ETSdepartment{Direction générale} % Your department here
+\ETSname{Aldus Dumbledore} % Your name here
+% \ETScity{Montreal}  % If you want to change the default city (Montreal)
 
 % Optional subject line
 \subject{L'insupportable métamorphose}
 
-% You can create your signature here
-\signature{\raggedright
-\includegraphics[scale=0.2]{figs/dumbledores_signature.png}\\
-\name
+% You can create your signature here if you want to use an image.
+% If you provide the option "signature" to ETSletter class, it will
+% create a signature field to be signed via Adobe Acrobat Reader
+\signature{
+% \raggedright
+% \includegraphics[scale=0.2]{figs/dumbledores_signature.png}
 }
 
-% If use want to have a bilingual version of any content, use the \bilingual command
-% Example: \bilingual{Headmaster of Hogwarts}{Directeur de Poudlard}
-\address{\textbf{\bilingual{Headmaster of Hogwarts}{Directeur de Poudlard}\\
+\address{\textbf{Directeur de Poudlard\\
 Président du Magenmagot\\
 Fondateur de l'ordre du Phénix}\\
 École de magie et de sorcellerie de Poudlard\\ 
@@ -41,7 +48,7 @@ Highlands, Écosse, Royaume-Uni\\
  
 \opening{Chère Professeure McGonagall,}
 
-\lipsum[1-10]
+\lipsum[1-3]
 
 \closing{Bien cordialement,}
 
