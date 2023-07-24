@@ -21,4 +21,7 @@ their communication.
   "The AcroTeX education bundle" and is included here in the 
   `./acrotex` directory as it is a Contrib in TexLive.
 
+<a href="https://www.overleaf.com/latex/templates/ecole-de-technologie-superieure-ets-letter/gxsrktgghdny">
+<img src="https://img.shields.io/static/v1?style=for-the-badge&message=Overleaf&color=47A141&logo=Overleaf&logoColor=FFFFFF&label="/>
+</a>
 
